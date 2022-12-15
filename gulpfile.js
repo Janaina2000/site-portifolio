@@ -5,8 +5,8 @@ var gulp = require('gulp')
 
 var paths = {
     estilos: {
-        src: "src/scss/*/.scss",
-        dest: "src/css/"
+        src: "./src/scss/**/*.scss",
+        dest: "./src/css/"
     },
     
 };
@@ -35,8 +35,8 @@ function watch() {
 
 var build = gulp.series( gulp.parallel( style_prod, style_dev, watch));
 
+
 gulp.task(build);
 gulp.task('default', build);
-
 
 

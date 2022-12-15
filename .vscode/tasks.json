@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"command": "gulp", 
+	" isShellCommand": true, 
+	"tasks": [
+		{
+			"type": "gulp",
+			"task": "default",
+			"problemMatcher": [],
+			"label": "gulp: default"
+		}
+	]
+}
