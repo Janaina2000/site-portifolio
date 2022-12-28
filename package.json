@@ -2,7 +2,7 @@
   "name": "janaina",
   "version": "1.0.0",
   "description": "Meu primeiro site de apresentação pessoal, desenvovido com javascript e taillwind",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -34,9 +34,14 @@
     "node": "^19.2.0",
     "node-sass": "^8.0.0",
     "sass": "^1.56.2",
+    "tailwindcss": "^3.2.4",
     "vinyl-paths": "^5.0.0"
   },
   "dependencies": {
-    "gulp-javascript-obfuscator": "^1.1.6"
+    "clean": "^4.0.2",
+    "compass": "^0.1.1",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-watch": "^5.0.1",
+    "watch": "^1.0.2"
   }
 }

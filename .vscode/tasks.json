@@ -7,7 +7,11 @@
 			"type": "gulp",
 			"task": "default",
 			"problemMatcher": [],
-			"label": "gulp: default"
+			"label": "gulp: default",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			  }
 		}
 	]
 }

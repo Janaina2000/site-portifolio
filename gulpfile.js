@@ -1,7 +1,9 @@
+const { Clean } = require('clean');
 var gulp = require('gulp')
     rename = require('gulp-rename')
     autoprefixer = require('gulp-autoprefixer')
     sass = require("gulp-sass")(require('sass'))
+
 
 var paths = {
     estilos: {
@@ -33,7 +35,7 @@ function watch() {
     gulp.watch(paths.estilos.src, style_prod);
 }
 
-var build = gulp.series( gulp.parallel( style_prod, style_dev, watch));
+var build = gulp.series(gulp.parallel( style_prod, style_dev, watch));
 
 
 gulp.task(build);
