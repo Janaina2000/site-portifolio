@@ -10,7 +10,11 @@ module.exports = {
       'fundo': '#151925',
       'fundo-dark': '#0E0E1A',
       'black': '#000000',
-      'white': '#FFFFFF',
+      'white': {
+        light: '#c9c9c9',
+        DEFAULT: '#ffffff',
+        dark: '#9b9b9b',
+      },
     },
     container: {
       center: true,

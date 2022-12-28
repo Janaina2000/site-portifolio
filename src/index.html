@@ -11,27 +11,144 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="absolute top-0 w-full py-8">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#" class="text-white text-md mr-4">Home</a>
+                    <a href="#" class="text-white text-md mx-4">Biografia</a>
+                    <a href="#" class="text-white text-md mx-4">Experiências</a>
+                    <a href="#" class="text-white text-md mx-4">Sonhos</a>
+                    <a href="#" class="text-white text-md mx-4">Projetos</a>
+                    <a href="#" class="text-white text-md ml-4">Contato</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
     <main>
         <div class="home bg-fundo h-screen bg-[url('../src/image/fundo.svg')] bg-no-repeat bg-bottom bg-cover ">
             <div class="container h-full flex items-center justify-between ">
                 <div class="w-1/2">
                     <h1 class="text-7xl text-white font-bold mb-8">Janaina <br>Rapanelli</h1>
                     <h3 class="text-white text-2xl">Desenvolvedora Front-end</h3>
-                    <p class="text-white text-lg pt-32">"O sucesso é a soma de pequenos esforços<br> repetidos dia após dia.” (Robert Collier)</p> 
+                    <p class="text-white text-lg pt-32">"O sucesso é a soma de pequenos esforços<br> repetidos dia após
+                        dia.” (Robert Collier)</p>
                 </div>
 
-                <img class="w-1/2 h-full object-contain" src="../src/image/computador.svg" alt="">
+                <img class="w-1/2 h-full object-contain pt-16" src="../src/image/computador.svg" alt="">
             </div>
         </div>
-        <div class="sobre bg-fundo h-screen"></div>
-        <div class="experiencia"></div>
-        <div class="sonhos"></div>
-        <div class="conhecimento"></div>
-        <div class="hobis"></div>
+        <div class="sobre bg-fundo ">
+            <div class="container">
+                <div class="h-screen flex flex-col justify-center">
+                    <div class="flex items-center">
+                        <div class="w-[40%]">
+                            <img src="../src/image/sobre.png" class="w-full object-contain">
+                        </div>
+                        <div class="w-[60%] p-16">
+
+                            <h2 class="text-white text-4xl font-bold pb-8">Sobre mim</h2>
+                            <div class="bg-fundo-dark p-8 rounded-xl">
+                                <p class="text-md text-white">Olá, sou Janaina Silva Rapanelli, nasci 16 de março do ano
+                                    de 2000. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                    an unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into
+                                    Olá, sou Janaina Silva Rapanelli, nasci 16 de março do ano</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center">
+
+                        <div class="flex items-center bg-fundo-dark h-20 px-6 rounded-xl rounded-br-none">
+                            <div class="flex items-center">
+                                <a href="">
+                                    <img src="../src/image/icones/facebook.svg" class="w-8 h-8 object-contain mr-3" />
+                                </a>
+                                <a href="">
+                                    <img src="../src/image/icones/instagram.svg" class="w-8 h-8 object-contain mr-3" />
+                                </a>
+                                <a href="">
+                                    <img src="../src/image/icones/linkedin.svg" class="w-8 h-8 object-contain mr-3" />
+                                </a>
+                                <a href="">
+                                    <img src="../src/image/icones/github.svg" class="w-8 h-8 object-contain" />
+                                </a>
+
+                            </div>
+                            <span class="text-white text-xl px-16">Me acompanhe nas redes sociais</span>
+                        </div>
+
+                        <img src="../src/image/perfil-social.jpg" class="h-20 ml-6 object-contain rounded-xl">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="experiencia bg-fundo bg-fixed">
+            <div class="container flex flex-col items-center">
+                <h2 class="text-white text-4xl font-bold py-16">Experiêcias</h2>
+            </div>
+        </div>
+        <div class="sonhos h-[420px] bg-[url('../src/image/paralax.jpg')] bg-no-repeat bg-bottom bg-cover bg-fixed">
+            <div class="container flex flex-col items-center justify-center h-full">
+                <h2 class="text-white text-5xl font-bold pb-8">Sonhos</h2>
+                <p class="text-white text-lg text-center">“O futuro pertence àqueles que acreditam na <br> beleza de
+                    seus sonhos”.
+                </p>
+            </div>
+        </div>
+        <div class="conhecimento bg-fundo">
+            <div class="container flex flex-col items-center">
+                <h2 class="text-white text-4xl font-bold pt-16">Conhecimentos</h2>
+                <p class="text-white text-md text-center pt-8">Fique por dentro nas tecnologia em que eu <br> tenho
+                    maiores experiencias
+                </p>
+            </div>
+        </div>
+        <div class="hobis bg-fundo">
+            <div class="container">
+                <h2 class="text-white text-4xl font-bold pt-16">Hobbis</h2>
+            </div>
+        </div>
         <div class="projetos"></div>
     </main>
-    <footer></footer>
+    <footer class="bg-fundo bg-[url('../src/image/footer.svg')] bg-no-repeat bg-top bg-cover ">
+        <div class="container">
+            <div class="flex pt-36 pb-16">
+                <div class="w-[30%] pr-16 border-r border-white">
+                    <h4 class="text-md font-semibold text-white mb-4">Menu</h4>
+                    <div class="flex flex-col">
+                        <a href="#" class="text-white text-md mb-1">Home</a>
+                        <a href="#" class="text-white text-md mb-1">Sobre mim</a>
+                        <a href="#" class="text-white text-md mb-1">Experiência</a>
+                        <a href="#" class="text-white text-md mb-1">Sonhos</a>
+                    </div>
+
+                </div>
+                <div class="w-[40%] px-16 border-r border-white">
+                    <h4 class="text-md font-semibold text-white mb-4">Contato</h4>
+                    <div class="flex flex-col">
+                        <a href="#" class="text-white text-md mb-1">(18) 99650-4534</a>
+                        <a href="#" class="text-white text-md mb-1">janaina.2012silva.js@gmail.com</a>
+                        <a href="#" class="text-white text-md mb-1">janaina_2012silva@hotmail.com</a>
+                    </div>
+                </div>
+                <div class="w-[30%] pl-16">
+                    <h4 class="text-md font-semibold text-white">Redes sociais</h4>
+                </div>
+            </div>
+            <div class="flex justify-center w-full border-t border-white py-8">
+                <span class="text-white text-sm">2022 © Janaina Rapanelli CNPJ 46.242.282/0001-34</span>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
