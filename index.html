@@ -8,9 +8,10 @@
     <title>Janaina Rapanelli</title>
     <link type="text/css" href="./src/css/main.css" />
     <link href="./dist/output.css" rel="stylesheet">
-    <link rel="icon" 
-      type="image/png" 
-      href="./src/image/favicon.png">
+    <link rel="icon" type="image/png" href="./src/image/favicon.png">
+    <link rel="stylesheet" href="./src/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -30,7 +31,17 @@
         </div>
     </header>
     <main>
-        <section class="home bg-fundo h-screen bg-no-repeat bg-bottom bg-cover " style="background-image: url('./src/image/site/fundo.svg');">
+        <div class="owl-carousel owl-theme">
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+        </div>
+        <section class="home bg-fundo h-screen bg-no-repeat bg-bottom bg-cover "
+            style="background-image: url('./src/image/site/fundo.svg');">
             <div class="container h-full flex items-center justify-between ">
                 <div class="w-1/2">
                     <h1 class="text-7xl text-white font-bold mb-8">Janaina <br>Rapanelli</h1>
@@ -96,8 +107,8 @@
                 <h2 class="text-white text-4xl font-bold py-16">Experiêcias</h2>
             </div>
         </section>
-        <section class="sonhos h-[420px] bg-no-repeat bg-bottom bg-cover bg-fixed" style="background-image: url('./src/image/site/paralax.jpg');"
-        >
+        <section class="sonhos h-[420px] bg-no-repeat bg-bottom bg-cover bg-fixed"
+            style="background-image: url('./src/image/site/paralax.jpg');">
             <div class="container flex flex-col items-center justify-center h-full">
                 <h2 class="text-white text-5xl font-bold pb-8">Sonhos</h2>
                 <p class="text-white text-lg text-center">“O futuro pertence àqueles que acreditam na <br> beleza de
@@ -120,7 +131,8 @@
         </section>
         <section class="projetos"></section>
     </main>
-    <footer class="bg-fundo bg-no-repeat bg-top bg-cover " style="background-image: url('./src/image/site/footer.svg');">
+    <footer class="bg-fundo bg-no-repeat bg-top bg-cover "
+        style="background-image: url('./src/image/site/footer.svg');">
         <div class="container">
             <div class="flex pt-36 pb-16">
                 <div class="w-[30%] pr-16 border-r border-white">
@@ -151,6 +163,13 @@
         </div>
 
     </footer>
+    <script src="./src/plugins/jquery/jquery.min.js"></script>
+    <script src="./src/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
 </body>
 
 </html>
