@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content:  ["**/*.{html,js}"],
+  content:  ["**/*.{html,js}",
+'./index.html']
   theme: {
     extend: {},
   colors: {
@@ -18,7 +19,6 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: '1rem',
       screens: {
         sm: '600px',
         md: '728px',
@@ -27,5 +27,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [ require('@tailwindcss/forms'),
+  require('@tailwindcss/aspect-ratio'),
+  require('@tailwindcss/typography'),
+  require('tailwindcss-children'),],
 }
