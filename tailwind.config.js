@@ -1,9 +1,9 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content:  ["**/*.{html,js}",
-'./index.html']
+  content:  ["*.{html,js}",
+'./index.html'],
   theme: {
-    extend: {},
   colors: {
       'primary': '#C10044',
       'secondary': '#9F0AC2',
@@ -26,9 +26,31 @@ module.exports = {
         xl: '1040px',
       },
     },
+
+
+  
   },
-  plugins: [ require('@tailwindcss/forms'),
-  require('@tailwindcss/aspect-ratio'),
-  require('@tailwindcss/typography'),
-  require('tailwindcss-children'),],
+  plugins: [
+  
+    function ({ addComponents }) {
+        addComponents({
+            '.container': {
+                maxWidth: '100%',
+                '@screen sm': {
+                    maxWidth: '640px',
+                },
+                '@screen md': {
+                    maxWidth: '768px',
+                },
+                '@screen lg': {
+                    maxWidth: '1024px',
+                },
+                '@screen xl': {
+                    maxWidth: '1180px',
+                },
+            },
+
+        })
+    }
+],
 }

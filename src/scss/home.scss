@@ -1,3 +1,11 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-title{
+  font-family: 'Paytone One', sans-serif;
+}
+
 .c-card{
     &__icon{
         display: flex;
@@ -23,25 +31,51 @@
 
     
 
+   
+
+
+}
+
+.owl-item{
+  &:nth-child(3n + 1){
+    .c-card__linha{
+      background-image: linear-gradient(to right, #F9E400  , #EB0572 );
+    }
+
     .title-ano{
 
       background: linear-gradient(to right, #F9E400 30%, #EB0572 , #EB0572 );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+  
+  }
 
-    &:nth-child(2n + 1){
-      .c-card__linha{
-        background-image: linear-gradient(to right, #F9E400  , #EB0572 );
-      }
-    
+  &:nth-child(3n + 2){
+    .c-card__linha{
+      background-image: linear-gradient(to right, #EB0572  , #CD1BF7 );
     }
 
-    &:nth-child(2n + 2){
-      .c-card__linha{
-        background-image: linear-gradient(to right, #EB0572  , #CD1BF7 );
-      }
-    
+    .title-ano{
+
+      background: linear-gradient(to right, #EB0572 30%, #CD1BF7 , #CD1BF7 );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+  }
+
+  &:nth-child(3n){
+    .c-card__linha{
+      background-image: linear-gradient(to right, #CD1BF7  ,  #00C0F1);
     }
 
+    .title-ano{
+
+      background: linear-gradient(to right, #CD1BF7 30%, #00C0F1 , #00C0F1 );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+  }
 }
