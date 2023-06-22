@@ -6,6 +6,7 @@ var gulp = require('gulp')
     concat = require('gulp-concat');
     tailwindcss = require('tailwindcss');
 
+    const livereload = require('gulp-livereload');
     const postcss = require('gulp-postcss');
      const cleanCSS = require('gulp-clean-css');
      
@@ -19,6 +20,8 @@ var paths = {
 };
 
 
+
+
 function style_tailwind() {
       const plugins = [
         tailwindcss('./tailwind.config.js')
@@ -29,6 +32,17 @@ function style_tailwind() {
       .pipe(rename('output.css'))
 
       .pipe(gulp.dest(paths.estilos.dest));
+  }
+
+  function html_watch(){
+    // Inicia o servidor de livereload
+    // Monitora o arquivo HTML e recarrega a página no navegador quando houver alterações
+    livereload.listen();
+    style_tailwind();
+    return gulp.src('index.html')
+        .pipe(livereload());
+
+
   }
 
 function style_dev() {
@@ -54,12 +68,16 @@ function style_prod() {
 }
 
 function watch() {
+   
     gulp.watch(paths.estilos.src, style_dev);
     gulp.watch(paths.estilos.src, style_prod);
     gulp.watch(paths.estilos.src, style_tailwind);
+    gulp.watch('index.html', html_watch);
 }
 
-var build = gulp.series(gulp.parallel( style_prod, style_dev, style_tailwind, watch));
+var build = gulp.series(gulp.parallel( style_prod, style_dev, style_tailwind, watch, html_watch));
+
+
 
 
 gulp.task(build);
