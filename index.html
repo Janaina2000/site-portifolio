@@ -23,12 +23,13 @@
         <div class="container">
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
-                    <a href="#" class="text-white text-sm font-medium mr-4">Home</a>
-                    <a href="#" class="text-white text-sm font-medium mx-4">Biografia</a>
-                    <a href="#" class="text-white text-sm font-medium mx-4">Experiências</a>
-                    <a href="#" class="text-white text-sm font-medium mx-4">Sonhos</a>
-                    <a href="#" class="text-white text-sm font-medium mx-4">Projetos</a>
-                    <a href="#" class="text-white text-sm font-medium ml-4">Contato</a>
+                    <a href="#home" class="text-white text-sm font-medium mr-4">Home</a>
+                    <a href="#biografia" class="text-white text-sm font-medium mx-4">Biografia</a>
+                    <a href="#experiencia" class="text-white text-sm font-medium mx-4">Experiências</a>
+                    <a href="#sonhos" class="text-white text-sm font-medium mx-4">Sonhos</a>
+                    <a href="#conhecimento" class="text-white text-sm font-medium mx-4">Conhecimento</a>
+                    <a href="#projetos" class="text-white text-sm font-medium mx-4">Projetos</a>
+                    <a href="#contato" class="text-white text-sm font-medium ml-4">Contato</a>
                 </div>
 
             </div>
@@ -36,7 +37,7 @@
     </header>
     <main>
 
-        <section class="home bg-fundo h-screen bg-no-repeat bg-bottom bg-cover "
+        <section id="home" class="home bg-fundo h-screen bg-no-repeat bg-bottom bg-cover "
             style="background-image: url('./src/image/site/fundo.svg');">
             <div class="container h-full flex items-center justify-between ">
                 <div class="w-1/2">
@@ -49,7 +50,7 @@
                 <img class="w-1/2 h-full object-contain pt-16" src="./src/image/site/computador.svg" alt="">
             </div>
         </section>
-        <section class="sobre bg-fundo ">
+        <section id="biografia" class="sobre bg-fundo ">
             <div class="container">
                 <div class="h-screen flex flex-col justify-center">
                     <div class="flex items-center">
@@ -99,7 +100,7 @@
             </div>
         </section>
 
-        <section class="experiencia bg-fundo py-16">
+        <section id="experiencia" class="experiencia bg-fundo py-16">
             <div class="container flex flex-col items-center">
                 <h2 class="text-white text-4xl font-bold pb-8">Experiêcias</h2>
                 <div class="owl-carousel owl-theme">
@@ -172,7 +173,7 @@
             </div>
         </section>
 
-        <section class="sonhos h-[620px] mt-[-210px] bg-no-repeat bg-bottom bg-cover bg-fixed"
+        <section id="sonhos" class="sonhos h-[620px] mt-[-210px] bg-no-repeat bg-bottom bg-cover bg-fixed"
             style="background-image: url('./src/image/site/paralax.jpg');">
             <div class="container flex flex-col items-center justify-center h-full">
                 <h2 class="text-white text-4xl font-bold pb-8">Sonhos</h2>
@@ -182,35 +183,59 @@
             </div>
         </section>
 
-        <section class="conhecimento bg-fundo py-16">
+        <section id="conhecimento" class="conhecimento bg-fundo py-16">
             <div class="container">
                 <h2 class="text-white text-4xl font-bold  text-center">Conhecimentos</h2>
                 <p class="text-white text-sm text-center pt-5">Fique por dentro nas tecnologia em que eu <br> tenho
                     maiores experiencias
                 </p>
 
-                <div class="grid grid-cols-2 gap-8 mt-16">
-                    <div class="bg-fundo-dark border-2 border-solid border-secondary rounded-xl px-8 py-4">
+                <div class="grid lg:grid-cols-2 grid-rows-8 lg:grid-rows-4 gap-16 mt-16">
+                    <div class="bg-fundo-dark  border-2 border-solid border-orange rounded-xl relative pr-8 pl-[4rem] py-4">
+                        <img src="./src/image/linguagens/html.svg?v=1.0" class="absolute left-[-3rem] top-[50%] translate-y-[-50%] h-[6rem] w-[6rem] object-contain"/>
                         <h5 class="text-white text-sm font-semibold mb-2">HTML (Linguagem de Marcação de Hipertexto)</h5>
                         <p class="text-xs text-white">HTML é uma linguagem de marcação utilizada  para estruturar conteudos de páginas na Web, interpretado por navegadores.</p>
                     </div>
-                    <div class="bg-fundo-dark border-2 border-solid border-secondary rounded-xl px-8 py-4">
-                        <h5 class="text-white text-sm font-semibold mb-2">HTML (Linguagem de Marcação de Hipertexto)</h5>
-                        <p class="text-xs text-white">HTML é uma linguagem de marcação utilizada  para estruturar conteudos de páginas na Web, interpretado por navegadores.</p>
+                    <div class="bg-fundo-dark border-2 border-solid border-blue rounded-xl relative pr-8 pl-[4rem] py-4">
+                        <img src="./src/image/linguagens/css.svg?v=1.0" class="absolute left-[-3rem] top-[50%] translate-y-[-50%] h-[6rem] w-[6rem] object-contain"/>
+                        <h5 class="text-white text-sm font-semibold mb-2">CSS (Folhas de estilo em cascata)</h5>
+                        <p class="text-xs text-white">CSS é uma linguagem de estilo,  usada para personalização visual  de  elementos escritos em uma linguagem de marcação.</p>
                     </div>
-                    <div class="bg-fundo-dark border-2 border-solid border-secondary rounded-xl px-8 py-4">
-                        <h5 class="text-white text-sm font-semibold mb-2">HTML (Linguagem de Marcação de Hipertexto)</h5>
-                        <p class="text-xs text-white">HTML é uma linguagem de marcação utilizada  para estruturar conteudos de páginas na Web, interpretado por navegadores.</p>
+                    <div class="bg-fundo-dark border-2 border-solid border-primary rounded-xl relative pr-8 pl-[4rem] py-4">
+                        <img src="./src/image/linguagens/sass.svg?v=1.0" class="absolute left-[-3rem] top-[50%] translate-y-[-50%] h-[6rem] w-[6rem] object-contain"/>
+                        <h5 class="text-white text-sm font-semibold mb-2">Sass </h5>
+                        <p class="text-xs text-white">Sass é um pré-processador que simplifica o desenvolvimento de CSS, reduzindo repetições e aumentando a eficiência do processo.</p>
                     </div>
-                    <div class="bg-fundo-dark border-2 border-solid border-tertiary rounded-xl px-8 py-4">
-                        <h5 class="text-p text-sm font-semibold mb-2">HTML (Linguagem de Marcação de Hipertexto)</h5>
-                        <p class="text-xs text-white">HTML é uma linguagem de marcação utilizada  para estruturar conteudos de páginas na Web, interpretado por navegadores.</p>
+                    <div class="bg-fundo-dark border-2 border-solid border-secondary rounded-xl relative pr-8 pl-[4rem] py-4">
+                        <img src="./src/image/linguagens/bootstrap.svg?v=1.0" class="absolute left-[-3rem] top-[50%] translate-y-[-50%] h-[6rem] w-[6rem] object-contain"/>
+                        <h5 class="text-white text-sm font-semibold mb-2">Bootstrap</h5>
+                        <p class="text-xs text-white">Bootstrap é um framework web para componentes de interface responsivos e amigáveis, baseado em HTML, CSS e JavaScript</p>
+                    </div>
+                    <div class="bg-fundo-dark border-2 border-solid border-tertiary rounded-xl relative pr-8 pl-[4rem] py-4">
+                        <img src="./src/image/linguagens/taillwind.svg?v=1.0" class="absolute left-[-3rem] top-[50%] translate-y-[-50%] h-[6rem] w-[6rem] object-contain"/>
+                        <h5 class="text-white text-sm font-semibold mb-2">Taillwind</h5>
+                        <p class="text-xs text-white">TaillWind é uma estrutura CSS  de código aberto ,  permite que você escreva CSS em seu HTML na forma de classes pré-definidas.</p>
+                    </div>
+                    <div class="bg-fundo-dark border-2 border-solid border-yellow rounded-xl relative pr-8 pl-[4rem] py-4">
+                        <img src="./src/image/linguagens/javascript.svg?v=1.0" class="absolute left-[-3rem] top-[50%] translate-y-[-50%] h-[6rem] w-[6rem] object-contain"/>
+                        <h5 class="text-white text-sm font-semibold mb-2">Javascript</h5>
+                        <p class="text-xs text-white">Javascript é uma linguagem de programação interpretada estruturada , baseada em objetoss, tornando o layoout web mais dinamico.</p>
+                    </div>
+                    <div class="bg-fundo-dark border-2 border-solid border-green rounded-xl relative pr-8 pl-[4rem] py-4">
+                        <img src="./src/image/linguagens/vue.svg?v=1.0" class="absolute left-[-3rem] top-[50%] translate-y-[-50%] h-[6rem] w-[6rem] object-contain"/>
+                        <h5 class="text-white text-sm font-semibold mb-2">VUE</h5>
+                        <p class="text-xs text-white">VUE é um  Framework JavaScript para aplicações web rápidas, com renderização declarativa e composição de componentes</p>
+                    </div>
+                    <div class="bg-fundo-dark border-2 border-solid border-orange-dark rounded-xl relative pr-8 pl-[4rem] py-4">
+                        <img src="./src/image/linguagens/github.svg?v=1.0" class="absolute left-[-3rem] top-[50%] translate-y-[-50%] h-[6rem] w-[6rem] object-contain"/>
+                        <h5 class="text-white text-sm font-semibold mb-2">Git</h5>
+                        <p class="text-xs text-white">Git é um sistema distribuído de controle de versões para segurança, otimização de arquivamento e controle de alterações em projetos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="hobis py-16">
+        <section id="hobbis" class="hobis py-16">
             <div class="container">
                 <h2 class="text-white text-4xl font-bold pb-8">Hobbis</h2>
          
@@ -262,19 +287,20 @@
             </div>
         </div>
         </section>
-        <section class="projetos"></section>
+        <section id="projetos" class="projetos"></section>
     </main>
-    <footer class="bg-fundo bg-no-repeat bg-top bg-cover "
+    <footer id="contato" class="bg-fundo bg-no-repeat bg-top bg-cover "
         style="background-image: url('./src/image/site/footer.svg');">
         <div class="container">
             <div class="flex pt-36 pb-16">
                 <div class="w-[30%] pr-16 border-r border-white">
                     <h4 class="text-md font-semibold text-white mb-4">Menu</h4>
                     <div class="flex flex-col">
-                        <a href="#" class="text-white text-md mb-1">Home</a>
-                        <a href="#" class="text-white text-md mb-1">Sobre mim</a>
-                        <a href="#" class="text-white text-md mb-1">Experiência</a>
-                        <a href="#" class="text-white text-md mb-1">Sonhos</a>
+                        <a href="#home" class="text-white text-md mb-1">Home</a>
+                        <a href="#biografia" class="text-white text-md mb-1">Sobre mim</a>
+                        <a href="#experiencia" class="text-white text-md mb-1">Experiência</a>
+                        <a href="#sonhos" class="text-white text-md mb-1">Sonhos</a>
+                        <a href="#hobbis" class="text-white text-md mb-1">Hobbis</a>
                     </div>
 
                 </div>

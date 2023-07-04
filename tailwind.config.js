@@ -16,6 +16,13 @@ module.exports = {
         DEFAULT: '#ffffff',
         dark: '#9b9b9b',
       },
+      'orange': {
+        DEFAULT: '#E52F00',
+        dark: '#E82300'
+      },
+      'blue': '#0077E5',
+      'yellow': '#E5CE00',
+      'green': '#00E57F',
     },
     container: {
       center: true,
