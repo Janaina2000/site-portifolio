@@ -12,6 +12,7 @@ function loadHTML(file, selector) {
       })
       .catch(error => console.error('Erro ao carregar o HTML:', error));
   }
+
   
   // Carregar o cabeçalho e o rodapé ao carregar o documento
   document.addEventListener('DOMContentLoaded', () => {
@@ -19,3 +20,5 @@ function loadHTML(file, selector) {
     loadHTML('src/html/pages/home/index.html', 'main');
     loadHTML('src/html/base/footer.html', 'footer');
   });
+
+
