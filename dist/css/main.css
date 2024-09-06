@@ -512,10 +512,17 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.\!container {
+  width: 100% !important;
+}
 .container {
   width: 100%;
 }
 @media (min-width: 640px) {
+
+  .\!container {
+    max-width: 640px !important;
+  }
 
   .container {
     max-width: 640px;
@@ -523,11 +530,19 @@ video {
 }
 @media (min-width: 768px) {
 
+  .\!container {
+    max-width: 768px !important;
+  }
+
   .container {
     max-width: 768px;
   }
 }
 @media (min-width: 1024px) {
+
+  .\!container {
+    max-width: 1024px !important;
+  }
 
   .container {
     max-width: 1024px;
@@ -535,15 +550,28 @@ video {
 }
 @media (min-width: 1280px) {
 
+  .\!container {
+    max-width: 1280px !important;
+  }
+
   .container {
     max-width: 1280px;
   }
 }
 @media (min-width: 1536px) {
 
+  .\!container {
+    max-width: 1536px !important;
+  }
+
   .container {
     max-width: 1536px;
   }
+}
+.\!container {
+  with: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .container {
   with: 100%;
@@ -552,11 +580,19 @@ video {
 }
 @media (min-width: 640px) {
 
+  .\!container {
+    max-width: 640px !important;
+  }
+
   .container {
     max-width: 640px;
   }
 }
 @media (min-width: 768px) {
+
+  .\!container {
+    max-width: 768px !important;
+  }
 
   .container {
     max-width: 768px;
@@ -564,11 +600,19 @@ video {
 }
 @media (min-width: 1024px) {
 
+  .\!container {
+    max-width: 1024px !important;
+  }
+
   .container {
     max-width: 1024px;
   }
 }
 @media (min-width: 1280px) {
+
+  .\!container {
+    max-width: 1180px !important;
+  }
 
   .container {
     max-width: 1180px;
@@ -595,8 +639,14 @@ video {
 .left-8 {
   left: 2rem;
 }
+.left-\[-3rem\] {
+  left: -3rem;
+}
 .top-0 {
   top: 0px;
+}
+.top-\[50\%\] {
+  top: 50%;
 }
 .mx-4 {
   margin-left: 1rem;
@@ -604,6 +654,9 @@ video {
 }
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -622,6 +675,9 @@ video {
 }
 .mr-4 {
   margin-right: 1rem;
+}
+.mt-16 {
+  margin-top: 4rem;
 }
 .mt-\[-210px\] {
   margin-top: -210px;
@@ -656,11 +712,17 @@ video {
 .h-20 {
   height: 5rem;
 }
+.h-48 {
+  height: 12rem;
+}
 .h-8 {
   height: 2rem;
 }
 .h-\[620px\] {
   height: 620px;
+}
+.h-\[6rem\] {
+  height: 6rem;
 }
 .h-full {
   height: 100%;
@@ -670,6 +732,9 @@ video {
 }
 .w-1\/2 {
   width: 50%;
+}
+.w-48 {
+  width: 12rem;
 }
 .w-8 {
   width: 2rem;
@@ -683,14 +748,24 @@ video {
 .w-\[60\%\] {
   width: 60%;
 }
+.w-\[6rem\] {
+  width: 6rem;
+}
 .w-full {
   width: 100%;
+}
+.translate-y-\[-50\%\] {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .resize {
   resize: both;
+}
+.grid-rows-8 {
+  grid-template-rows: repeat(8, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -704,10 +779,19 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.gap-16 {
+  gap: 4rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.rounded {
+  border-radius: 0.25rem;
 }
 .rounded-xl {
   border-radius: 0.75rem;
@@ -718,15 +802,53 @@ video {
 .border {
   border-width: 1px;
 }
+.border-2 {
+  border-width: 2px;
+}
 .border-r {
   border-right-width: 1px;
 }
 .border-t {
   border-top-width: 1px;
 }
+.border-solid {
+  border-style: solid;
+}
+.border-blue {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 119 229 / var(--tw-border-opacity));
+}
+.border-green {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 229 127 / var(--tw-border-opacity));
+}
+.border-orange {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 47 0 / var(--tw-border-opacity));
+}
+.border-orange-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(232 35 0 / var(--tw-border-opacity));
+}
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(193 0 68 / var(--tw-border-opacity));
+}
+.border-secondary {
+  --tw-border-opacity: 1;
+  border-color: rgb(159 10 194 / var(--tw-border-opacity));
+}
+.border-tertiary {
+  --tw-border-opacity: 1;
+  border-color: rgb(32 204 247 / var(--tw-border-opacity));
+}
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-yellow {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 206 0 / var(--tw-border-opacity));
 }
 .bg-fundo {
   --tw-bg-opacity: 1;
@@ -755,6 +877,10 @@ video {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .p-16 {
   padding: 4rem;
 }
@@ -768,6 +894,10 @@ video {
   padding-left: 4rem;
   padding-right: 4rem;
 }
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -775,6 +905,14 @@ video {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .py-8 {
   padding-top: 2rem;
@@ -792,8 +930,14 @@ video {
 .pl-16 {
   padding-left: 4rem;
 }
+.pl-\[4rem\] {
+  padding-left: 4rem;
+}
 .pr-16 {
   padding-right: 4rem;
+}
+.pr-8 {
+  padding-right: 2rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
@@ -801,11 +945,17 @@ video {
 .pt-16 {
   padding-top: 4rem;
 }
+.pt-3 {
+  padding-top: 0.75rem;
+}
 .pt-32 {
   padding-top: 8rem;
 }
 .pt-36 {
   padding-top: 9rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
 }
 .text-center {
   text-align: center;
@@ -837,6 +987,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .font-black {
   font-weight: 900;
@@ -1028,6 +1182,16 @@ input, select {
   background: linear-gradient(to right, #CD1BF7 30%, #00C0F1, #00C0F1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (min-width: 1024px) {
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
 }
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
