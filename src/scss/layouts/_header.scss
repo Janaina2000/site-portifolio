@@ -1,0 +1,11 @@
+.c-nav{
+    @apply flex items-center;
+
+    &__item{
+        @apply text-white text-base font-semibold mx-4 first:ml-0;
+    }
+}
+
+.button-theme{
+    @apply border-2 border-white rounded-lg text-white flex items-center px-4 py-2 text-base justify-between gap-4 font-semibold;
+}

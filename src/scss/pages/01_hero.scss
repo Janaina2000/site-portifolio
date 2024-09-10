@@ -1,4 +1,27 @@
 
 .c-hero{
-    @apply bg-fundo h-screen bg-no-repeat bg-bottom bg-cover w-full;
+    @apply bg-fundo bg-no-repeat bg-bottom w-full relative;
+ 
+    &:before{
+        @apply content-[''] absolute top-0 left-0 h-[75%] w-full bg-bottom bg-no-repeat;
+        background-image: url('/src/image/site/fundo.svg');
+        background-size: cover;
+    }
+
+    .c-figure{
+        @apply w-1/2 relative;
+
+        &:before{
+            @apply content-[''] absolute bottom-0 left-0 h-full w-full ;
+            // background-image: url('/src/image/photos_large/shadow.svg');
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        img{
+            @apply relative;
+
+        }
+    }
 }
