@@ -24,4 +24,39 @@
 
         }
     }
+    .icon-html{
+        @apply  absolute top-12 left-[50%] h-24 w-24 translate-x-[-50%];
+        filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
+        animation: drop-shadow 4s linear infinite ;
+        transition: all .3s ease-in-out;
+    }
+    .icon-css{
+        @apply  absolute top-[30%] left-[20%] h-24 w-24;
+        filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
+        animation: drop-shadow 4s linear infinite reverse;
+        transition: all .3s ease-in-out;
+    }
+
+    .icon-sass{
+        @apply  absolute bottom-[10%] left-[20%] h-24 w-24;
+        filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
+        animation: drop-shadow 4s linear infinite reverse;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@keyframes drop-shadow{
+
+    0% {
+        transform: rotate(0deg) translateX(0.5rem) rotate(0deg);
+        filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
+    }
+    50%{
+        filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0));
+    }
+    100%{
+        transform: rotate(360deg) translateX(0.5rem) rotate(-360deg);
+        filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
+    }
+
 }
