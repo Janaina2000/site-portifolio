@@ -43,18 +43,73 @@ document.addEventListener('DOMContentLoaded', () => {
   loadHTML('src/html/pages/home/sections/07_social.html', '#social');
 
   setTimeout(() => {
-    const swiper = new Swiper('#mySwiper', {
+    const experience = new Swiper('.swipper-experience', {
       // Configurações do Swiper
       loop: true,
-      slidesPerView: 3,
+      slidesPerView: 1,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       
+      breakpoints: {
+        // quando a largura for menor que 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        // quando a largura for maior ou igual a 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        // quando a largura for maior ou igual a 1024px
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      }
+
     });
+
+    const hobbis = new Swiper('.swipper-hobbis', {
+      // Configurações do Swiper
+      loop: true,
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      
+      breakpoints: {
+        // quando a largura for menor que 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        // quando a largura for maior ou igual a 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        // quando a largura for maior ou igual a 1024px
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+      }
+
+    });
+
   }, 100)
-  
 
 });
 
