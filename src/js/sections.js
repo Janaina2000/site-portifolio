@@ -41,6 +41,20 @@ document.addEventListener('DOMContentLoaded', () => {
   loadHTML('src/html/pages/home/sections/05_skil.html', '#skil');
   loadHTML('src/html/pages/home/sections/06_hobbis.html', '#hobbis');
   loadHTML('src/html/pages/home/sections/07_social.html', '#social');
+
+  setTimeout(() => {
+    const swiper = new Swiper('#mySwiper', {
+      // Configurações do Swiper
+      loop: true,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      
+    });
+  }, 100)
   
 
 });
+

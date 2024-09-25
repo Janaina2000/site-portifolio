@@ -1,4 +1,6 @@
 // Função para carregar o conteúdo de um arquivo HTML e inseri-lo em um elemento
+
+
 function loadHTML(file, selector) {
     fetch(file)
       .then(response => {
@@ -19,6 +21,7 @@ function loadHTML(file, selector) {
     loadHTML('src/html/base/header.html', 'header');
     loadHTML('src/html/pages/home/index.html', 'main');
     loadHTML('src/html/base/footer.html', 'footer');
+
   });
 
 
