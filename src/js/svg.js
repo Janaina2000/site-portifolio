@@ -1,45 +1,44 @@
 // Função para carregar o arquivo JSON com ícones
-function loadIconsJSON(url, callback) {
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            if (callback) callback(data);
-        })
-        .catch(error => console.error('Erro ao carregar JSON de ícones:', error));
+async function loadIconsJSON(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Rede não disponível');
+        return await response.json();
+    } catch (error) {
+        console.error('Erro ao carregar JSON de ícones:', error);
+    }
 }
 
 // Função para extrair viewBox do SVG
 function extractViewBox(svgContent) {
     const viewBoxMatch = svgContent.match(/viewBox="([^"]*)"/);
-    return viewBoxMatch ? viewBoxMatch[1] : '0 0 22 22'; // Valor padrão se não encontrado
+    return viewBoxMatch ? viewBoxMatch[1] : '0 0 22 22'; // Valor padrão
 }
 
 // Função para preencher um SVG específico com o ícone correspondente
 function fillSVGIcons(iconsData) {
-    // Seleciona todos os elementos <svg> com o atributo "name"
     const svgElements = document.querySelectorAll('svg[name]');
-    
     svgElements.forEach(svg => {
         const iconName = svg.getAttribute('name');
         const iconData = iconsData.icons.find(icon => icon.id === iconName);
 
         if (iconData) {
-            // Extrai o conteúdo SVG sem a tag <svg> externa
             const svgContent = iconData.svg
-                .replace(/<svg[^>]*>/, '') // Remove a tag <svg> inicial
-                .replace(/<\/svg>/, ''); // Remove a tag </svg> final
+                .replace(/<svg[^>]*>/, '')
+                .replace(/<\/svg>/, '');
 
-            // Adiciona o conteúdo SVG ao elemento
-            svg.innerHTML = svgContent;
+            if (!svgContent) {
+                console.error(`Conteúdo SVG vazio para o ícone ${iconName}`);
+                return;
+            }
 
-            // Extrai e define o viewBox automaticamente
-            const svgElementContent = iconData.svg;
-            const viewBox = extractViewBox(svgElementContent);
+            svg.innerHTML = svgContent; // Preserve atributos do SVG original
+
+            const viewBox = extractViewBox(iconData.svg);
             svg.setAttribute('viewBox', viewBox);
 
-            // Define a largura e altura do SVG com base nos atributos
-            const widthMatch = svgElementContent.match(/width="([^"]*)"/);
-            const heightMatch = svgElementContent.match(/height="([^"]*)"/);
+            const widthMatch = iconData.svg.match(/width="([^"]*)"/);
+            const heightMatch = iconData.svg.match(/height="([^"]*)"/);
             if (widthMatch) svg.setAttribute('width', widthMatch[1]);
             if (heightMatch) svg.setAttribute('height', heightMatch[1]);
 
@@ -50,11 +49,15 @@ function fillSVGIcons(iconsData) {
 }
 
 // Inicializa o carregador de ícones
-function initializeIconLoader() {
-    loadIconsJSON('/src/svg/icons.json', (iconsData) => {
+async function initializeIconLoader() {
+    const iconsData = await loadIconsJSON('/src/svg/icons.json');
+    if (iconsData) {
+        console.log('Ícones carregados:', iconsData); // Log para depuração
         fillSVGIcons(iconsData);
-    });
+    }
 }
 
-// Quando o documento estiver carregado, inicialize o carregador de ícones
-document.addEventListener('DOMContentLoaded', initializeIconLoader);
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM completamente carregado e analisado');
+    initializeIconLoader();
+});

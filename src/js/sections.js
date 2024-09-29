@@ -13,23 +13,6 @@ function loadHTML(file, selector) {
       .catch(error => console.error('Erro ao carregar o HTML:', error));
 }
 
-// Função para carregar e injetar o conteúdo do SVG no DOM
-function loadSVG(url) {
-  return fetch(url)
-      .then(response => {
-          if (!response.ok) {
-              throw new Error('Falha ao carregar ' + url);
-          }
-          return response.text();
-      })
-      .then(svgText => {
-          const parser = new DOMParser();
-          const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
-          const svgRoot = svgDoc.querySelector('svg');
-          document.body.insertAdjacentHTML('afterbegin', svgRoot.outerHTML);
-      })
-      .catch(error => console.error('Erro ao carregar o SVG:', error));
-}
 
 // Carregar o cabeçalho e o rodapé ao carregar o documento
 document.addEventListener('DOMContentLoaded', () => {
@@ -42,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadHTML('src/html/pages/home/sections/06_hobbis.html', '#hobbis');
   loadHTML('src/html/pages/home/sections/07_social.html', '#social');
 
+  
   setTimeout(() => {
     const experience = new Swiper('.swipper-experience', {
       // Configurações do Swiper
@@ -108,6 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
     });
+
+    
 
   }, 100)
 

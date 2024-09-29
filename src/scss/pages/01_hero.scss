@@ -25,20 +25,41 @@
         }
     }
     .icon-html{
-        @apply  absolute top-12 left-[50%] h-24 w-24 translate-x-[-50%];
+        @apply  absolute top-4 left-[45%] h-24 w-24 translate-x-[-50%];
         filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
         animation: drop-shadow 4s linear infinite ;
         transition: all .3s ease-in-out;
     }
     .icon-css{
-        @apply  absolute top-[30%] left-[20%] h-24 w-24;
+        @apply  absolute top-[15%] left-[20%] h-24 w-24;
         filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
         animation: drop-shadow 4s linear infinite reverse;
         transition: all .3s ease-in-out;
     }
 
+    .icon-sass{
+        @apply  absolute top-[34%] left-[40%] h-24 w-24;
+        filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
+        animation: drop-shadow 4s linear infinite ;
+        transition: all .3s ease-in-out;
+    }
+
     .icon-vue{
-        @apply  absolute bottom-[10%] left-[20%] h-24 w-24;
+        @apply  absolute top-[48%] right-[24%] h-24 w-20;
+        filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
+        animation: drop-shadow 4s linear infinite reverse;
+        transition: all .3s ease-in-out;
+    }
+
+    .icon-bootstrap{
+        @apply  absolute top-[30%] right-[5%] h-24 w-16;
+        filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
+        animation: drop-shadow 4s linear infinite ;
+        transition: all .3s ease-in-out;
+    }
+
+    .icon-javascript{
+        @apply  absolute top-[10%] right-[17%] h-24 w-16;
         filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
         animation: drop-shadow 4s linear infinite reverse;
         transition: all .3s ease-in-out;
@@ -48,14 +69,14 @@
 @keyframes drop-shadow{
 
     0% {
-        transform: rotate(0deg) translateX(0.5rem) rotate(0deg);
+        transform: rotate(0deg) translateX(0.5rem)  translateY(0.5rem) rotate(0deg);
         filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
     }
     50%{
         filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0));
     }
     100%{
-        transform: rotate(360deg) translateX(0.5rem) rotate(-360deg);
+        transform: rotate(360deg) translateX(0.5rem) translateY(0.5rem)  rotate(-360deg);
         filter: drop-shadow(5px 7px 0px rgb(15, 200, 247, 0.7));
     }
 
