@@ -14,7 +14,7 @@
 }
 
 .c-card{
-    &__icon{
+    &__header{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,6 +22,30 @@
         width: 95px;
         height: 95px;
         margin-bottom: -50px;
+      }
+    }
+
+    &__body{
+      @apply bg-fundo-dark p-6 pt-10 rounded-xl;
+      
+      .text-section{
+        @apply overflow-auto h-[6rem] pr-4;
+
+        &::-webkit-scrollbar {
+          width: 8px;               /* width of the entire scrollbar */
+        }
+        
+        &::-webkit-scrollbar-track {
+          border-radius: 20px;
+          background-color: rgb(126, 126, 126); 
+           border: 2px solid rgb(0, 0, 0);    /* color of the tracking area */
+        }
+        
+        &::-webkit-scrollbar-thumb {
+          background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+          border-radius: 20px;       /* roundness of the scroll thumb */
+          @appy border-[3px] border-fundo; /* creates padding around scroll thumb */
+        }
       }
     }
 

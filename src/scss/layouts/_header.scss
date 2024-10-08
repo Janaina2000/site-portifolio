@@ -2,7 +2,8 @@
     @apply flex items-center;
 
     &__item{
-        @apply text-white text-base font-semibold mx-4 first:ml-0;
+        @apply text-white text-base font-semibold mx-4 first:ml-0 ;
+     
     }
 }
 

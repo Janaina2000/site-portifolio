@@ -1,0 +1,13 @@
+.conhecimento{
+    .card{
+        @apply bg-fundo-dark  rounded-xl relative pr-8 pl-[4rem] py-4 border-2 border-solid flex flex-col justify-center;
+
+        &__title{
+            @apply text-white text-base font-semibold mb-2;
+        }
+
+        &__text{
+            @apply text-sm text-white;
+        }
+    }
+}

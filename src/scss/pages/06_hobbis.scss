@@ -1,6 +1,17 @@
 
 
-.hobis{
-   @apply bg-fundo;
+.hobbis{
+   @apply bg-fundo-dark;
+
+   .card{
+      @apply bg-fundo overflow-hidden rounded-md;
+      &__text{
+         @apply text-white font-semibold text-sm px-5 pt-3;
+      }
+
+      &__info{
+         @apply text-white text-sm px-5 pb-3 block;
+      }
+   }
   }
   

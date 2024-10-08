@@ -1,6 +1,11 @@
 .sobre{
-    .box-text {
-        @apply text-lg text-white leading-loose max-h-[23rem] overflow-auto pr-4;
+
+  &__image{
+    @apply w-full object-contain;
+    filter: contrast(110%)
+  }
+    &__text {
+        @apply max-h-[18rem] overflow-auto pr-4;
 
         &::-webkit-scrollbar {
             width: 8px;               /* width of the entire scrollbar */
@@ -17,5 +22,21 @@
             border-radius: 20px;       /* roundness of the scroll thumb */
             @appy border-[3px] border-fundo; /* creates padding around scroll thumb */
           }
+          p{
+            @apply pb-6;
+          }
+    }
+
+    .link-social{
+      &__icon{
+        // @appy w-8 h-8 object-contain  fill-white bg-red;
+        fill: white;
+      }
+
+      &:hover{
+        &__icon{
+        fill: purple;
+      }
+      }
     }
 }
