@@ -1,11 +1,36 @@
 .sobre{
 
+
+  &__figure{
+    @apply w-[50%] relative;
+
+    .degrade{ 
+      @apply absolute w-[60%] aspect-square bottom-10 left-[51.5%] translate-x-[-50%] rotate-[-45deg] rounded-2xl;
+      background-image: linear-gradient(to right top, rgb(159, 10, 194,1) , rgb(159, 10, 194,0) 80%);
+    }
+
+    .degrade-blue{
+      @apply  absolute top-[30%] right-6 w-[18%] aspect-square rotate-[-45deg] z-[1] rounded-xl;
+       background-image: linear-gradient(to right top, rgb(0, 192, 241,1) , rgb(31, 145, 171,0.2) );
+      
+    }
+
+    &:before{
+      @apply content-[''] absolute top-[45%] left-0 w-[40%] aspect-square border-2 border-blue rotate-[-45deg] z-[1] rounded-xl;
+    }
+
+    &:after{
+      @apply content-[''] absolute bottom-[10%] right-[20%] w-[20%] aspect-square border-2 border-yellow rotate-[-45deg] z-[1] rounded-xl;
+      
+    }
+  }
+
   &__image{
-    @apply w-full object-contain;
+    @apply w-full object-contain relative z-[2];
     filter: contrast(110%)
   }
     &__text {
-        @apply max-h-[18rem] overflow-auto pr-4;
+        @apply max-h-[14rem] overflow-auto pr-4;
 
         &::-webkit-scrollbar {
             width: 8px;               /* width of the entire scrollbar */
