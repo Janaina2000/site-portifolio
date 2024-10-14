@@ -29,7 +29,7 @@
       @apply bg-fundo-dark p-6 pt-10 rounded-xl;
       
       .text-section{
-        @apply overflow-auto h-[6rem] pr-4;
+        @apply truncate h-[2rem] pr-4;
 
         &::-webkit-scrollbar {
           width: 8px;               /* width of the entire scrollbar */
@@ -60,6 +60,11 @@
  
     }
 
+
+    &__button{
+      @apply text-white font-medium text-center uppercase border border-white py-2  w-full rounded mb-4 mt-2;
+    }
+
     
 
    
@@ -67,7 +72,7 @@
 
 }
 
-.owl-item{
+.swiper-slide{
   &:nth-child(3n + 1){
     .c-card__linha{
       background-image: linear-gradient(to right, #F9E400  , #EB0572 );

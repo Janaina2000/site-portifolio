@@ -11,18 +11,17 @@
     .c-figure{
         @apply w-1/2 relative;
 
-        &:before{
-            @apply content-[''] absolute bottom-0 left-0 h-full w-full ;
-            // background-image: url('/src/image/photos_large/shadow.svg');
-            background-size: contain;
-            background-position: bottom;
-            background-repeat: no-repeat;
-        }
+        // &:before{
+        //     @apply content-[''] absolute -bottom-12 -left-16 h-full w-full rotate-[45deg];
+        //     background-image: radial-gradient(rgb(0, 217, 255), rgba(255, 255, 255, 0) 60%);
+        //     transform: skew(-42deg, 10deg);
+        // }
 
         img{
             @apply relative;
 
         }
+      
     }
     .icon-html{
         @apply  absolute top-4 left-[45%] h-24 w-24 2xl:h-28 2xl:w-28 ;
