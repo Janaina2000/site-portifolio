@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadHTML('src/html/pages/home/sections/04_dreams.html', '#dreams');
   loadHTML('src/html/pages/home/sections/05_skil.html', '#skil');
   loadHTML('src/html/pages/home/sections/06_hobbis.html', '#hobbis');
-  loadHTML('src/html/pages/home/sections/07_social.html', '#social');
+  loadHTML('src/html/pages/home/sections/07_projetos.html', '#projetos');
 
   
   setTimeout(() => {
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         // quando a largura for maior ou igual a 1024px
         1024: {
-          slidesPerView: 5,
+          slidesPerView: 4,
           spaceBetween: 30,
         },
       }

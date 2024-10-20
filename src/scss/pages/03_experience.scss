@@ -1,9 +1,6 @@
 .experience{
   @apply overflow-hidden;
 
-
-
-
 }
 
 .swiper-container {
@@ -18,13 +15,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
       figure{
-        width: 95px;
-        height: 95px;
+        @apply w-16 h-16 rounded-lg mt-4 p-4;
         margin-bottom: -50px;
+        transform: rotate(45deg);
       }
     }
 
+    
     &__body{
       @apply bg-fundo-dark p-6 pt-10 rounded-xl;
       
@@ -66,52 +65,67 @@
     }
 
     
+    &:nth-child(3n + 1){
+      .c-card__linha{
+        background-image: linear-gradient(to right, #F9E400  , #EB0572 );
+      }
+  
+      .title-ano{
+  
+        background: linear-gradient(to right, #F9E400 30%, #EB0572 , #EB0572 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 
+      .c-card__header{
+        figure{
+          background: linear-gradient(to right, #f98500 , #EB0572 );
+        }
+      }
+    
+    }
+  
+    &:nth-child(3n + 2){
+      .c-card__linha{
+        background-image: linear-gradient(to right, #EB0572  , #CD1BF7 );
+      }
+  
+      .title-ano{
+  
+        background: linear-gradient(to right, #EB0572 30%, #CD1BF7 , #CD1BF7 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .c-card__header{
+        figure{
+          background-image: linear-gradient(to right, #EB0572  , #CD1BF7 );
+        }
+      }
+    
+    }
+  
+    &:nth-child(3n){
+      .c-card__linha{
+        background-image: linear-gradient(to right, #CD1BF7  ,  #00C0F1);
+      }
+  
+      .title-ano{
+  
+        background: linear-gradient(to right, #CD1BF7 30%, #00C0F1 , #00C0F1 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .c-card__header{
+        figure{
+          background-image: linear-gradient(to right, #CD1BF7  ,  #00C0F1);
+        }
+      }
+    
+    }
    
 
 
 }
 
-.swiper-slide{
-  &:nth-child(3n + 1){
-    .c-card__linha{
-      background-image: linear-gradient(to right, #F9E400  , #EB0572 );
-    }
-
-    .title-ano{
-
-      background: linear-gradient(to right, #F9E400 30%, #EB0572 , #EB0572 );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  
-  }
-
-  &:nth-child(3n + 2){
-    .c-card__linha{
-      background-image: linear-gradient(to right, #EB0572  , #CD1BF7 );
-    }
-
-    .title-ano{
-
-      background: linear-gradient(to right, #EB0572 30%, #CD1BF7 , #CD1BF7 );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  
-  }
-
-  &:nth-child(3n){
-    .c-card__linha{
-      background-image: linear-gradient(to right, #CD1BF7  ,  #00C0F1);
-    }
-
-    .title-ano{
-
-      background: linear-gradient(to right, #CD1BF7 30%, #00C0F1 , #00C0F1 );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  
-  }
-}

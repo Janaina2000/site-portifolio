@@ -1,16 +1,16 @@
 
 
 .hobbis{
-   @apply bg-fundo-dark;
+   background-image: linear-gradient(to bottom right, #0e0e1A, #0e0e1A, #650b7a );
 
    .card{
       @apply bg-fundo overflow-hidden rounded-md;
       &__text{
-         @apply text-white font-semibold text-sm px-3 pt-3;
+         @apply text-white font-semibold text-base px-3 pt-3;
       }
 
       &__info{
-         @apply text-white text-sm px-3 pb-3 block;
+         @apply text-white text-base px-3 pb-3 block;
       }
    }
   }
