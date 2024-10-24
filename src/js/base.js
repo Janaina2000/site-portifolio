@@ -25,4 +25,9 @@ function loadHTML(file, selector) {
   });
 
 
-
+  function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

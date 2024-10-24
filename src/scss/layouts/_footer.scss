@@ -1,0 +1,7 @@
+.button-up{
+    @apply flex justify-center relative w-full;
+
+    &:before{
+        @apply content-[''] absolute left-0 top-[50%] translate-y-[-50%] w-full h-[1px] rounded-lg bg-white;
+    }
+}
