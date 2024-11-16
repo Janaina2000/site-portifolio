@@ -1,4 +1,5 @@
-.conhecimento{
+.section-skil{
+    @apply bg-fundo py-16;
     .card{
         @apply bg-fundo-dark  rounded-xl relative pr-8 pl-[4rem] py-4 border-2 border-solid flex flex-col justify-center transition-all ease-in-out duration-300;
 

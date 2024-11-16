@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadHTML('src/html/pages/home/sections/04_dreams.html', '#dreams');
   loadHTML('src/html/pages/home/sections/05_skil.html', '#skil');
   loadHTML('src/html/pages/home/sections/06_hobbis.html', '#hobbis');
-  loadHTML('src/html/pages/home/sections/07_projetos.html', '#projetos');
+  loadHTML('src/html/pages/home/sections/07_projects.html', '#projects');
 
   
   setTimeout(() => {
