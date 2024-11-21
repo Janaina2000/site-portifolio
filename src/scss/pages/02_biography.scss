@@ -5,7 +5,7 @@
     @apply w-[50%] relative;
 
     .degrade{ 
-      @apply absolute w-[60%] aspect-square bottom-10 left-[51.5%] translate-x-[-50%] rotate-[-45deg] rounded-2xl;
+      @apply absolute w-[60%] aspect-square bottom-16 left-[51.5%] translate-x-[-50%] rotate-[-45deg] rounded-2xl;
       background-image: linear-gradient(to right top, rgb(159, 10, 194,1) , rgb(159, 10, 194,0) 80%);
     }
 

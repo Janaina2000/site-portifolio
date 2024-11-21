@@ -50,7 +50,7 @@ function fillSVGIcons(iconsData) {
 
 // Inicializa o carregador de ícones
 async function initializeIconLoader() {
-    const iconsData = await loadIconsJSON('/src/svg/icons.json');
+    const iconsData = await loadIconsJSON('src/svg/icons.json');
     if (iconsData) {
         console.log('Ícones carregados:', iconsData); // Log para depuração
         fillSVGIcons(iconsData);
