@@ -979,9 +979,6 @@ video {
 .bg-cover {
   background-size: cover;
 }
-.bg-fixed {
-  background-attachment: fixed;
-}
 .bg-bottom {
   background-position: bottom;
 }
@@ -1366,7 +1363,7 @@ input, select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.c-hero {
+.section-hero {
   position: relative;
   width: 100%;
   --tw-bg-opacity: 1;
@@ -1374,7 +1371,7 @@ input, select {
   background-position: bottom;
   background-repeat: no-repeat;
 }
-.c-hero:before {
+.section-hero:before {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1387,14 +1384,14 @@ input, select {
   background-image: url("/src/image/site/fundo.svg");
   background-size: cover;
 }
-.c-hero .c-figure {
+.section-hero .c-figure {
   position: relative;
   width: 50%;
 }
-.c-hero .c-figure img {
+.section-hero .c-figure img {
   position: relative;
 }
-.c-hero .icon-html {
+.section-hero .icon-html {
   position: absolute;
   top: 1rem;
   left: 45%;
@@ -1403,18 +1400,18 @@ input, select {
 }
 @media (min-width: 1536px) {
 
-  .c-hero .icon-html {
+  .section-hero .icon-html {
     height: 7rem;
     width: 7rem;
   }
 }
-.c-hero .icon-html {
+.section-hero .icon-html {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 6s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.8s;
 }
-.c-hero .icon-css {
+.section-hero .icon-css {
   position: absolute;
   top: 15%;
   left: 20%;
@@ -1423,18 +1420,18 @@ input, select {
 }
 @media (min-width: 1536px) {
 
-  .c-hero .icon-css {
+  .section-hero .icon-css {
     height: 7rem;
     width: 7rem;
   }
 }
-.c-hero .icon-css {
+.section-hero .icon-css {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 6s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.7s;
 }
-.c-hero .icon-sass {
+.section-hero .icon-sass {
   position: absolute;
   top: 34%;
   left: 40%;
@@ -1443,18 +1440,18 @@ input, select {
 }
 @media (min-width: 1536px) {
 
-  .c-hero .icon-sass {
+  .section-hero .icon-sass {
     height: 7rem;
     width: 7rem;
   }
 }
-.c-hero .icon-sass {
+.section-hero .icon-sass {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.2s ease-in-out;
   animation-delay: 0.6s;
 }
-.c-hero .icon-vue {
+.section-hero .icon-vue {
   position: absolute;
   top: 48%;
   right: 24%;
@@ -1463,18 +1460,18 @@ input, select {
 }
 @media (min-width: 1536px) {
 
-  .c-hero .icon-vue {
+  .section-hero .icon-vue {
     height: 7rem;
     width: 6rem;
   }
 }
-.c-hero .icon-vue {
+.section-hero .icon-vue {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.7s;
 }
-.c-hero .icon-bootstrap {
+.section-hero .icon-bootstrap {
   position: absolute;
   top: 30%;
   right: 5%;
@@ -1483,18 +1480,18 @@ input, select {
 }
 @media (min-width: 1536px) {
 
-  .c-hero .icon-bootstrap {
+  .section-hero .icon-bootstrap {
     height: 7rem;
     width: 5rem;
   }
 }
-.c-hero .icon-bootstrap {
+.section-hero .icon-bootstrap {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.5s;
 }
-.c-hero .icon-javascript {
+.section-hero .icon-javascript {
   position: absolute;
   top: 10%;
   right: 17%;
@@ -1503,12 +1500,12 @@ input, select {
 }
 @media (min-width: 1536px) {
 
-  .c-hero .icon-javascript {
+  .section-hero .icon-javascript {
     height: 7rem;
     width: 5rem;
   }
 }
-.c-hero .icon-javascript {
+.section-hero .icon-javascript {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
@@ -1529,11 +1526,17 @@ input, select {
     opacity: 1;
   }
 }
-.sobre__figure {
+.section-biography {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 25 37 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section-biography__figure {
   position: relative;
   width: 50%;
 }
-.sobre__figure .degrade {
+.section-biography__figure .degrade {
   position: absolute;
   bottom: 4rem;
   left: 51.5%;
@@ -1545,7 +1548,7 @@ input, select {
   border-radius: 1rem;
   background-image: linear-gradient(to right top, rgb(159, 10, 194), rgba(159, 10, 194, 0) 80%);
 }
-.sobre__figure .degrade-blue {
+.section-biography__figure .degrade-blue {
   position: absolute;
   top: 30%;
   right: 1.5rem;
@@ -1557,7 +1560,7 @@ input, select {
   border-radius: 0.75rem;
   background-image: linear-gradient(to right top, rgb(0, 192, 241), rgba(31, 145, 171, 0.2));
 }
-.sobre__figure:before {
+.section-biography__figure:before {
   position: absolute;
   top: 45%;
   left: 0px;
@@ -1573,7 +1576,7 @@ input, select {
   --tw-content: "";
   content: var(--tw-content);
 }
-.sobre__figure:after {
+.section-biography__figure:after {
   position: absolute;
   bottom: 10%;
   right: 20%;
@@ -1589,7 +1592,7 @@ input, select {
   --tw-content: "";
   content: var(--tw-content);
 }
-.sobre__image {
+.section-biography__image {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -1597,36 +1600,40 @@ input, select {
      object-fit: contain;
   filter: contrast(110%);
 }
-.sobre__text {
+.section-biography__text {
   max-height: 14rem;
   overflow: auto;
   padding-right: 1rem;
 }
-.sobre__text::-webkit-scrollbar {
+.section-biography__text::-webkit-scrollbar {
   width: 8px; /* width of the entire scrollbar */
 }
-.sobre__text::-webkit-scrollbar-track {
+.section-biography__text::-webkit-scrollbar-track {
   border-radius: 20px;
   background-color: rgb(126, 126, 126);
   border: 2px solid rgb(0, 0, 0); /* color of the tracking area */
 }
-.sobre__text::-webkit-scrollbar-thumb {
+.section-biography__text::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 255); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   @appy border-[3px] border-fundo; /* creates padding around scroll thumb */
 }
-.sobre__text p {
+.section-biography__text p {
   padding-bottom: 1.5rem;
 }
-.sobre .link-social__icon {
+.section-biography .link-social__icon {
   fill: white;
 }
-.sobre .link-social:hover__icon {
+.section-biography .link-social:hover__icon {
   fill: purple;
 }
 
-.experience {
+.section-experience {
   overflow: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 25 37 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .swiper-container {
@@ -1734,7 +1741,23 @@ input, select {
   background-image: linear-gradient(to right, #CD1BF7, #00C0F1);
 }
 
-.conhecimento .card {
+.section-dreams {
+  margin-top: -210px;
+  height: 620px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("/src/image/site/paralax.jpg");
+}
+
+.section-skil {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 25 37 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section-skil .card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1752,7 +1775,7 @@ input, select {
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.conhecimento .card__title {
+.section-skil .card__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1760,23 +1783,25 @@ input, select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.conhecimento .card__text {
+.section-skil .card__text {
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hobbis {
+.section-hobbis {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-image: linear-gradient(to bottom right, #0e0e1A, #0e0e1A, #650b7a);
 }
-.hobbis .card {
+.section-hobbis .card {
   overflow: hidden;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(21 25 37 / var(--tw-bg-opacity));
 }
-.hobbis .card__text {
+.section-hobbis .card__text {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.75rem;
@@ -1786,7 +1811,7 @@ input, select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.hobbis .card__info {
+.section-hobbis .card__info {
   display: block;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1797,7 +1822,7 @@ input, select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.projetos {
+.section-projects {
   --tw-bg-opacity: 1;
   background-color: rgb(21 25 37 / var(--tw-bg-opacity));
   padding-top: 4rem;
@@ -2004,7 +2029,7 @@ input, select {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity))
 }
-.c-hero {
+.section-hero {
   position: relative;
   width: 100%;
   --tw-bg-opacity: 1;
@@ -2012,7 +2037,7 @@ input, select {
   background-position: bottom;
   background-repeat: no-repeat;
 }
-.c-hero:before {
+.section-hero:before {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2025,14 +2050,14 @@ input, select {
   background-image: url("/src/image/site/fundo.svg");
   background-size: cover;
 }
-.c-hero .c-figure {
+.section-hero .c-figure {
   position: relative;
   width: 50%;
 }
-.c-hero .c-figure img {
+.section-hero .c-figure img {
   position: relative;
 }
-.c-hero .icon-html {
+.section-hero .icon-html {
   position: absolute;
   top: 1rem;
   left: 45%;
@@ -2040,18 +2065,18 @@ input, select {
   width: 6rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-html {
+  .section-hero .icon-html {
     height: 7rem;
     width: 7rem;
   }
 }
-.c-hero .icon-html {
+.section-hero .icon-html {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 6s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.8s;
 }
-.c-hero .icon-css {
+.section-hero .icon-css {
   position: absolute;
   top: 15%;
   left: 20%;
@@ -2059,18 +2084,18 @@ input, select {
   width: 6rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-css {
+  .section-hero .icon-css {
     height: 7rem;
     width: 7rem;
   }
 }
-.c-hero .icon-css {
+.section-hero .icon-css {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 6s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.7s;
 }
-.c-hero .icon-sass {
+.section-hero .icon-sass {
   position: absolute;
   top: 34%;
   left: 40%;
@@ -2078,18 +2103,18 @@ input, select {
   width: 6rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-sass {
+  .section-hero .icon-sass {
     height: 7rem;
     width: 7rem;
   }
 }
-.c-hero .icon-sass {
+.section-hero .icon-sass {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.2s ease-in-out;
   animation-delay: 0.6s;
 }
-.c-hero .icon-vue {
+.section-hero .icon-vue {
   position: absolute;
   top: 48%;
   right: 24%;
@@ -2097,18 +2122,18 @@ input, select {
   width: 5rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-vue {
+  .section-hero .icon-vue {
     height: 7rem;
     width: 6rem;
   }
 }
-.c-hero .icon-vue {
+.section-hero .icon-vue {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.7s;
 }
-.c-hero .icon-bootstrap {
+.section-hero .icon-bootstrap {
   position: absolute;
   top: 30%;
   right: 5%;
@@ -2116,18 +2141,18 @@ input, select {
   width: 4rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-bootstrap {
+  .section-hero .icon-bootstrap {
     height: 7rem;
     width: 5rem;
   }
 }
-.c-hero .icon-bootstrap {
+.section-hero .icon-bootstrap {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.5s;
 }
-.c-hero .icon-javascript {
+.section-hero .icon-javascript {
   position: absolute;
   top: 10%;
   right: 17%;
@@ -2135,12 +2160,12 @@ input, select {
   width: 4rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-javascript {
+  .section-hero .icon-javascript {
     height: 7rem;
     width: 5rem;
   }
 }
-.c-hero .icon-javascript {
+.section-hero .icon-javascript {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
@@ -2161,11 +2186,17 @@ input, select {
     opacity: 1;
   }
 }
-.sobre__figure {
+.section-biography {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 25 37 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section-biography__figure {
   position: relative;
   width: 50%;
 }
-.sobre__figure .degrade {
+.section-biography__figure .degrade {
   position: absolute;
   bottom: 4rem;
   left: 51.5%;
@@ -2177,7 +2208,7 @@ input, select {
   border-radius: 1rem;
   background-image: linear-gradient(to right top, rgb(159, 10, 194), rgba(159, 10, 194, 0) 80%);
 }
-.sobre__figure .degrade-blue {
+.section-biography__figure .degrade-blue {
   position: absolute;
   top: 30%;
   right: 1.5rem;
@@ -2189,7 +2220,7 @@ input, select {
   border-radius: 0.75rem;
   background-image: linear-gradient(to right top, rgb(0, 192, 241), rgba(31, 145, 171, 0.2));
 }
-.sobre__figure:before {
+.section-biography__figure:before {
   position: absolute;
   top: 45%;
   left: 0px;
@@ -2205,7 +2236,7 @@ input, select {
   --tw-content: "";
   content: var(--tw-content);
 }
-.sobre__figure:after {
+.section-biography__figure:after {
   position: absolute;
   bottom: 10%;
   right: 20%;
@@ -2221,7 +2252,7 @@ input, select {
   --tw-content: "";
   content: var(--tw-content);
 }
-.sobre__image {
+.section-biography__image {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -2229,35 +2260,39 @@ input, select {
      object-fit: contain;
   filter: contrast(110%);
 }
-.sobre__text {
+.section-biography__text {
   max-height: 14rem;
   overflow: auto;
   padding-right: 1rem;
 }
-.sobre__text::-webkit-scrollbar {
+.section-biography__text::-webkit-scrollbar {
   width: 8px; /* width of the entire scrollbar */
 }
-.sobre__text::-webkit-scrollbar-track {
+.section-biography__text::-webkit-scrollbar-track {
   border-radius: 20px;
   background-color: rgb(126, 126, 126);
   border: 2px solid rgb(0, 0, 0); /* color of the tracking area */
 }
-.sobre__text::-webkit-scrollbar-thumb {
+.section-biography__text::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 255); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   @appy border-[3px] border-fundo; /* creates padding around scroll thumb */
 }
-.sobre__text p {
+.section-biography__text p {
   padding-bottom: 1.5rem;
 }
-.sobre .link-social__icon {
+.section-biography .link-social__icon {
   fill: white;
 }
-.sobre .link-social:hover__icon {
+.section-biography .link-social:hover__icon {
   fill: purple;
 }
-.experience {
+.section-experience {
   overflow: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 25 37 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .swiper-container {
@@ -2364,8 +2399,22 @@ input, select {
 .c-card:nth-child(3n) .c-card__header figure {
   background-image: linear-gradient(to right, #CD1BF7, #00C0F1);
 }
-
-.conhecimento .card {
+.section-dreams {
+  margin-top: -210px;
+  height: 620px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("/src/image/site/paralax.jpg")
+}
+.section-skil {
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 25 37 / var(--tw-bg-opacity));
+    padding-top: 4rem;
+    padding-bottom: 4rem
+}
+.section-skil .card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -2383,7 +2432,7 @@ input, select {
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
-.conhecimento .card__title {
+.section-skil .card__title {
     margin-bottom: 0.5rem;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -2391,22 +2440,24 @@ input, select {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity))
 }
-.conhecimento .card__text {
+.section-skil .card__text {
     font-size: 0.875rem;
     line-height: 1.25rem;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity))
 }
-.hobbis {
-  background-image: linear-gradient(to bottom right, #0e0e1A, #0e0e1A, #650b7a);
+.section-hobbis {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-image: linear-gradient(to bottom right, #0e0e1A, #0e0e1A, #650b7a)
 }
-.hobbis .card {
+.section-hobbis .card {
   overflow: hidden;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(21 25 37 / var(--tw-bg-opacity));
+  background-color: rgb(21 25 37 / var(--tw-bg-opacity))
 }
-.hobbis .card__text {
+.section-hobbis .card__text {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.75rem;
@@ -2414,9 +2465,9 @@ input, select {
   line-height: 1.5rem;
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity))
 }
-.hobbis .card__info {
+.section-hobbis .card__info {
   display: block;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2424,15 +2475,15 @@ input, select {
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity))
 }
-.projetos {
+.section-projects {
     --tw-bg-opacity: 1;
     background-color: rgb(21 25 37 / var(--tw-bg-opacity));
     padding-top: 4rem;
     padding-bottom: 4rem
 }
-.c-hero {
+.section-hero {
   position: relative;
   width: 100%;
   --tw-bg-opacity: 1;
@@ -2440,7 +2491,7 @@ input, select {
   background-position: bottom;
   background-repeat: no-repeat;
 }
-.c-hero:before {
+.section-hero:before {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2453,14 +2504,14 @@ input, select {
   background-image: url("/src/image/site/fundo.svg");
   background-size: cover;
 }
-.c-hero .c-figure {
+.section-hero .c-figure {
   position: relative;
   width: 50%;
 }
-.c-hero .c-figure img {
+.section-hero .c-figure img {
   position: relative;
 }
-.c-hero .icon-html {
+.section-hero .icon-html {
   position: absolute;
   top: 1rem;
   left: 45%;
@@ -2468,18 +2519,18 @@ input, select {
   width: 6rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-html {
+  .section-hero .icon-html {
     height: 7rem;
     width: 7rem;
   }
 }
-.c-hero .icon-html {
+.section-hero .icon-html {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 6s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.8s;
 }
-.c-hero .icon-css {
+.section-hero .icon-css {
   position: absolute;
   top: 15%;
   left: 20%;
@@ -2487,18 +2538,18 @@ input, select {
   width: 6rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-css {
+  .section-hero .icon-css {
     height: 7rem;
     width: 7rem;
   }
 }
-.c-hero .icon-css {
+.section-hero .icon-css {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 6s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.7s;
 }
-.c-hero .icon-sass {
+.section-hero .icon-sass {
   position: absolute;
   top: 34%;
   left: 40%;
@@ -2506,18 +2557,18 @@ input, select {
   width: 6rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-sass {
+  .section-hero .icon-sass {
     height: 7rem;
     width: 7rem;
   }
 }
-.c-hero .icon-sass {
+.section-hero .icon-sass {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.2s ease-in-out;
   animation-delay: 0.6s;
 }
-.c-hero .icon-vue {
+.section-hero .icon-vue {
   position: absolute;
   top: 48%;
   right: 24%;
@@ -2525,18 +2576,18 @@ input, select {
   width: 5rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-vue {
+  .section-hero .icon-vue {
     height: 7rem;
     width: 6rem;
   }
 }
-.c-hero .icon-vue {
+.section-hero .icon-vue {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.7s;
 }
-.c-hero .icon-bootstrap {
+.section-hero .icon-bootstrap {
   position: absolute;
   top: 30%;
   right: 5%;
@@ -2544,18 +2595,18 @@ input, select {
   width: 4rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-bootstrap {
+  .section-hero .icon-bootstrap {
     height: 7rem;
     width: 5rem;
   }
 }
-.c-hero .icon-bootstrap {
+.section-hero .icon-bootstrap {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   animation-delay: 0.5s;
 }
-.c-hero .icon-javascript {
+.section-hero .icon-javascript {
   position: absolute;
   top: 10%;
   right: 17%;
@@ -2563,12 +2614,12 @@ input, select {
   width: 4rem;
 }
 @media (min-width: 1536px) {
-  .c-hero .icon-javascript {
+  .section-hero .icon-javascript {
     height: 7rem;
     width: 5rem;
   }
 }
-.c-hero .icon-javascript {
+.section-hero .icon-javascript {
   filter: drop-shadow(5px 7px 0px rgba(15, 200, 247, 0.7));
   animation: drop-shadow 4s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
@@ -2589,11 +2640,17 @@ input, select {
     opacity: 1;
   }
 }
-.sobre__figure {
+.section-biography {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 25 37 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section-biography__figure {
   position: relative;
   width: 50%;
 }
-.sobre__figure .degrade {
+.section-biography__figure .degrade {
   position: absolute;
   bottom: 4rem;
   left: 51.5%;
@@ -2605,7 +2662,7 @@ input, select {
   border-radius: 1rem;
   background-image: linear-gradient(to right top, rgb(159, 10, 194), rgba(159, 10, 194, 0) 80%);
 }
-.sobre__figure .degrade-blue {
+.section-biography__figure .degrade-blue {
   position: absolute;
   top: 30%;
   right: 1.5rem;
@@ -2617,7 +2674,7 @@ input, select {
   border-radius: 0.75rem;
   background-image: linear-gradient(to right top, rgb(0, 192, 241), rgba(31, 145, 171, 0.2));
 }
-.sobre__figure:before {
+.section-biography__figure:before {
   position: absolute;
   top: 45%;
   left: 0px;
@@ -2633,7 +2690,7 @@ input, select {
   --tw-content: "";
   content: var(--tw-content);
 }
-.sobre__figure:after {
+.section-biography__figure:after {
   position: absolute;
   bottom: 10%;
   right: 20%;
@@ -2649,7 +2706,7 @@ input, select {
   --tw-content: "";
   content: var(--tw-content);
 }
-.sobre__image {
+.section-biography__image {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -2657,36 +2714,40 @@ input, select {
      object-fit: contain;
   filter: contrast(110%);
 }
-.sobre__text {
+.section-biography__text {
   max-height: 14rem;
   overflow: auto;
   padding-right: 1rem;
 }
-.sobre__text::-webkit-scrollbar {
+.section-biography__text::-webkit-scrollbar {
   width: 8px; /* width of the entire scrollbar */
 }
-.sobre__text::-webkit-scrollbar-track {
+.section-biography__text::-webkit-scrollbar-track {
   border-radius: 20px;
   background-color: rgb(126, 126, 126);
   border: 2px solid rgb(0, 0, 0); /* color of the tracking area */
 }
-.sobre__text::-webkit-scrollbar-thumb {
+.section-biography__text::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 255); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   @appy border-[3px] border-fundo; /* creates padding around scroll thumb */
 }
-.sobre__text p {
+.section-biography__text p {
   padding-bottom: 1.5rem;
 }
-.sobre .link-social__icon {
+.section-biography .link-social__icon {
   fill: white;
 }
-.sobre .link-social:hover__icon {
+.section-biography .link-social:hover__icon {
   fill: purple;
 }
 
-.experience {
+.section-experience {
   overflow: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 25 37 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .swiper-container {
@@ -2794,7 +2855,23 @@ input, select {
   background-image: linear-gradient(to right, #CD1BF7, #00C0F1);
 }
 
-.conhecimento .card {
+.section-dreams {
+  margin-top: -210px;
+  height: 620px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("/src/image/site/paralax.jpg");
+}
+
+.section-skil {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 25 37 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section-skil .card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -2812,7 +2889,7 @@ input, select {
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.conhecimento .card__title {
+.section-skil .card__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2820,23 +2897,25 @@ input, select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.conhecimento .card__text {
+.section-skil .card__text {
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hobbis {
+.section-hobbis {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-image: linear-gradient(to bottom right, #0e0e1A, #0e0e1A, #650b7a);
 }
-.hobbis .card {
+.section-hobbis .card {
   overflow: hidden;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(21 25 37 / var(--tw-bg-opacity));
 }
-.hobbis .card__text {
+.section-hobbis .card__text {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.75rem;
@@ -2846,7 +2925,7 @@ input, select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.hobbis .card__info {
+.section-hobbis .card__info {
   display: block;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2857,7 +2936,7 @@ input, select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.projetos {
+.section-projects {
   --tw-bg-opacity: 1;
   background-color: rgb(21 25 37 / var(--tw-bg-opacity));
   padding-top: 4rem;
